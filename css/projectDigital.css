@@ -1,0 +1,407 @@
+/*1-common styles*/
+
+/*2-general styles*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*css3*/
+}
+
+.container{
+    margin:auto;
+    width: 83%;
+}
+body{
+    font-family: 'Cabin', sans-serif;
+   }
+   :root{
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --start:#6a67ce;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+   }
+   h1,h2,h3,h4,h5,h6{
+    font-family: montserrat,sans-serif;
+   }
+   button{
+    font-family:inherit ;
+   }
+
+   ul{
+    list-style: none;
+   }
+
+   a{
+    text-decoration:none;
+    text-transform: capitalize;
+   }
+   .pd-y{
+    padding: 50px 0;
+   }
+   .mg-x{
+    padding-left: 15px;
+   }
+   .clear{
+    clear: both;
+   }
+   .mg{
+    margin-right:30px;
+   }
+/*header style*/
+.header{
+    width: 100%;
+    background: var(--start);
+    
+}
+.header-content{
+   
+}
+.header-content .header-content-logo{
+    height: 100px;
+    padding: 30px 0;
+    
+    
+}
+.header-content-logo .logo{
+    width: 48%;
+    float: left;
+    
+}
+.header-content-logo .logo a{
+    color: var(--white);
+}
+.header-content-logo .nav{
+    width: 52%;
+    float: left;
+}
+.header-content-logo .nav li{
+    display: inline-block;
+}
+.header-content-logo .nav>li>a{
+    display: block;
+    padding: 10px 11px 7px 7px;
+    color: var(--white);
+}
+
+.drop-down{
+position: relative;
+}
+.drop-down-menu{
+    position: absolute;
+    width: 170px;
+    background: var(--white);
+    left: 10px;
+    
+    /* padding-left: 15px; */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ,visibility 0.5s;
+}
+.drop-down-menu li a{
+    color: var(--dark);
+    display: block;
+    text-align: center;
+    height: 30px;
+    width: 150px;
+    font-size: 15px;
+    padding-top: 5px;   
+}
+.drop-down-menu li{
+    margin-top: 10px;
+    padding-left: 10px;   
+}
+.header-content-logo .nav .active{
+    background: var(--light);
+    color: var(--start);
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    
+}
+.drop-down:hover .drop-down-menu{
+    opacity: 1;
+    visibility: visible;
+}
+.drop-down-menu li a:hover{
+    background: #eee;
+    
+}
+
+/* home section*/
+.home{
+  overflow: hidden;  
+  padding: 100px 0;
+  color: var(--light);
+  margin-right: 50px;
+}
+.home .home-content{
+    width: 50%;
+    float: left;
+   
+}
+
+.home .home-content h2{
+    font-size: 45px;
+    letter-spacing: 1px;
+    margin-top: 60px;
+    padding-bottom: 25px;
+    
+}
+.home .home-content img{
+    padding-left: 75px;
+}
+.home .home-content p{
+    letter-spacing: 1px;
+    line-height: 25px;
+    padding-bottom: 25px;
+   
+}
+.home .home-content button{
+    background: var(--start);
+    border: 2px solid var(--light);
+    width: 120px;
+    height: 40px;
+    margin-right: 20px;
+    margin-top: 25px;
+    
+}
+.home .home-content button a{
+    color: var(--light);
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    display: block;
+    
+
+}
+.clear{
+    clear: both;
+   }
+
+/*about section*/
+
+.about{
+padding: 100px 0 ;
+}
+.about-item-left{
+    width: 70%;
+    float: left;
+}
+.about-item-left .about-item-add{
+    left: 0px;
+    position: relative;
+    width: 50%;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.about-item-left .about-item-address , .about-item-desc{
+   position: absolute; 
+   width: 30%;
+   left: 400px;
+}
+.about-item-left .about-item-address{
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+.about-item-left .about-item-desc{
+    padding-top: 60px;
+    line-height: 30px;
+    color: var(--gray);
+}
+
+.about-item-right{
+    width: 30%;
+    float: left;
+}
+
+/*service section*/
+
+.service{
+    background:var(--light);
+}
+.add{
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.service .service-items{
+    overflow: hidden;
+}
+.service .service-items .service-item{
+width: 22.7%;
+float: left;
+background: var(--white);
+height: 320px;
+padding: 24px;
+
+}
+.service-item i{
+    background: var(--light);
+    padding: 20px;
+    margin-bottom: 20px;
+    
+}
+.item-title{
+    font-size: 25px;
+    padding-bottom: 20px;
+    
+}
+.item-desc{
+    line-height: 30px;
+    color: var(--gray);
+}
+.one{
+    color: var(--red);
+}
+.two{
+color: var(--primary);
+}
+.three{
+    color: var(--teal);
+}
+.four{
+    color: var(--orange);
+}
+
+/*marketing section*/
+.marketing-item{
+    width: 22.3%;
+    float: left;
+}
+.marketing-item img{
+    width: 100%;
+}
+
+/*work section*/
+
+.work{
+    background: var(--light);
+}
+.work-item{
+    width: 48%;
+    float: left;
+}
+.work-item h3{
+    padding-bottom: 30px;
+}
+
+/*portfolio section*/
+.portfolio-item{
+    width: 25%;
+    float: left;
+    padding-bottom: 15px;
+    
+   
+}
+.portfolio-item img{
+   width: 95%;
+}
+.bar{
+    width: 100%;
+    position: relative;
+}
+
+
+.nav-ver{
+    width: 90px;
+   padding-bottom: 20px;
+   background: #0D1326;
+   text-align: center;
+   border-top-left-radius:10px ;
+   border-bottom-left-radius: 10px;
+   position: fixed;
+  right: 0;
+   
+}
+.nav-ver li{
+    
+    color: #e6ebff;
+    
+    
+}
+.nav-ver a{
+    display: block;
+    margin: 30px 0;
+}
+
+/*partner section*/
+.partner{
+    background: #b84592;
+    color: var(--light);
+}
+.partner .icons{
+    
+}
+.partner .icons li{
+    display: inline-block; 
+    padding: 0 60px;
+}
+.partner .icons li.col-ver{
+    border-right: 1px solid var(--light);
+    
+}
+
+/*contact item*/
+.contact{
+    background: #212020;
+}
+
+.contact-items{
+    overflow: hidden;
+}
+.contact-item{
+    float: left;
+    width: 23%;
+    
+    margin-right: 22px;
+}
+.contact-item .item-title{
+    padding-bottom: 20px;
+    color: var(--light);
+}
+.contact-item .trust{
+    color: var(--light);
+   
+}
+.contact-item i{
+    margin-right: 5px;
+    
+}
+.contact-item ul li{
+    
+    padding-bottom: 20px;
+}
+.contact-item ul li a{
+    color: var(--gray);
+}
+
+.copyright{
+    text-align: center;
+    padding: 20px 0;
+    color: var(--gray);
+    
+}
+.copyright a{
+    color: var(--light);
+    margin-left: 3px;
+}
